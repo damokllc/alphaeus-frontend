@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_BASE = 'http://localhost:3000/api';
+  const API_BASE = 'https://alphaeus-backend-xxxx.onrender.com/api';
 
 // Projects
 export const getProjects = () => axios.get(`${API_BASE}/projects`);
@@ -16,3 +16,6 @@ export const deleteNews = (id) => axios.delete(`${API_BASE}/news/${id}`);
 
 // Contact
 export const sendContact = (data) => axios.post(`${API_BASE}/contact`, data);
+   git add .
+   git commit -m "Update API URL to Render backend"
+   git push
